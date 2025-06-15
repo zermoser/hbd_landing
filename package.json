@@ -2,6 +2,7 @@
   "name": "hbd_landing",
   "version": "0.0.1",
   "private": true,
+  "homepage": "https://zermoser.github.io/hbd_landing",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
