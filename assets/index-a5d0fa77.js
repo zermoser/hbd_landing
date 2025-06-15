@@ -51,4 +51,4 @@ Error generating stack: `+o.message+`
                       M${l+2} 12
                       C${l+3} 8, ${l-1} 8, ${l+2} 4
                       C${l+5} 8, ${l+1} 8, ${l+2} 12
-                    `,fill:"#FFA500",className:"animate-flicker-subtle"})]},a)})]})}),U(Ln.button,{onClick:o,className:"mt-4 px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white font-medium rounded-lg shadow transition",whileHover:{scale:1.05},whileTap:{scale:.95},children:"🎉 Celebrate Again"})]})]})};$s.createRoot(document.getElementById("root")).render(U(py.StrictMode,{children:U(cx,{})}))});export default fx();
+                    `,fill:"#FFA500",className:"animate-flicker-subtle"})]},a)})]})}),U(Ln.button,{onClick:o,className:"mt-4 px-6 py-2 bg-blue-600 hover:bg-blue-500 text-white font-medium rounded-lg shadow transition",whileHover:{scale:1.05},whileTap:{scale:.95},children:"🎉 Celebrate Again"})]})]})};$s.createRoot(document.getElementById("root")).render(U(py.StrictMode,{children:U(cx,{})}))});export default fx();
