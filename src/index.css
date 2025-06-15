@@ -2,42 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom styles Minimal */
+/* ให้พื้นขาว text-dark */
 body {
   @apply bg-white text-gray-800;
+  /* เพิ่ม safe-area padding สำหรับ iOS notch */
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
 }
 
-/* หากต้องการใช้ gradient text แบบ subtle */
+/* Subtle background pattern: ใช้ radial-gradient หรือ SVG pattern */
+/* ตัวอย่าง: small dot pattern สี very-light gray (#f0f0f0) บนพื้นขาว */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Card container styling */
+.card-container {
+  @apply bg-white shadow-xl rounded-2xl border border-gray-200;
+}
+
+/* Gradient text subtle สำหรับหัวข้อ */
 .subtle-gradient-text {
-  @apply font-semibold text-transparent bg-clip-text;
+  @apply font-extrabold text-transparent bg-clip-text;
   background-image: linear-gradient(90deg, #444444, #222222);
 }
 
-/* Floating small effect */
-.float-subtle {
-  @apply animate-float-subtle;
-}
-
-/* Flicker เทียน */
-.flicker-subtle {
-  @apply animate-flicker-subtle;
-}
-
-/* Balloon shape ถ้าต้องการเก็บ */
-.balloon {
-  width: 1rem;
-  height: 1.5rem;
-  border-radius: 9999px;
-  position: relative;
-  opacity: 0.8;
-}
-.balloon::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  width: 1px;
-  height: 0.75rem;
-  background: rgba(0, 0, 0, 0.2);
-  transform: translateX(-50%);
+/* Canvas confetti overlay */
+#confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 50;
 }
