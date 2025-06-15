@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/hbd-landing/',
+  base: '/hbd_landing/',
   server: {
     open: true,
     port: 3006
