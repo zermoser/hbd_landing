@@ -224,7 +224,7 @@ const App: React.FC = () => {
         {/* ปุ่ม Celebrate Again */}
         <motion.button
           onClick={celebrate}
-          className="mt-4 px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white font-medium rounded-lg shadow transition"
+          className="mt-4 px-6 py-2 bg-blue-600 hover:bg-blue-500 text-white font-medium rounded-lg shadow transition"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
